@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "mcci_greeter",
+  "version": "${version}",
+  "name": "MCCIGreeter",
+  "description": "AutoGG and AutoGLHF for MCCI",
+  "authors": [
+    "Christopher Angelo"
+  ],
+  "contact": {
+    "website": "https://angeloanan.xyz",
+    "repo": "https://github.com/angeloanan/MCCIGreeter"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/MCCIGreeter/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "xyz.angeloanan.mccigreeter.client.MCCIGreeterClient"
+    ],
+    "main": [
+      "xyz.angeloanan.mccigreeter.MCCIGreeter"
+    ]
+  },
+  "mixins": [
+    "MCCIGreeter.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.19.4"
+  }
+}
