@@ -34,6 +34,7 @@ public abstract class PacketListenerMixin {
             case "Sky Battle":
             case "Hole in the Wall":
             case "Round 1": // Battle Box, TGTTOS(?)
+            case "Leap 1":
                 sendPreGameMessage();
                 break;
             case "Victory!":
