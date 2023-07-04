@@ -6,6 +6,9 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = MCCIGreeterClient.MOD_ID)
 public class MCCIGreeterModConfig implements ConfigData {
+    public boolean preGameMessageEnabled = true;
+    public boolean postGameMessageEnabled = true;
+
     @Comment("""
         Whether to make AutoGG and AutoGLHF messages uplifting or not.
         If true, uses the messages defined below.

@@ -47,6 +47,8 @@ public abstract class PacketListenerMixin {
 
     @Unique
     private void sendPreGameMessage() {
+        if (!config.preGameMessageEnabled) return;
+
         if (config.upliftingMode) {
             int choice = random.nextInt(config.preGameMessage.length);
             sendChat(config.preGameMessage[choice]);
@@ -57,6 +59,8 @@ public abstract class PacketListenerMixin {
 
     @Unique
     private void sendPostGameMessage() {
+        if (!config.postGameMessageEnabled) return;
+
         if (config.upliftingMode) {
             int choice = random.nextInt(config.postGameMessage.length);
             sendChat(config.postGameMessage[choice]);
