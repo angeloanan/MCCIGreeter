@@ -1,0 +1,8 @@
+{
+  "text.autoconfig.mcci_greeter.title": "MCCI Greeter configuration",
+  "text.autoconfig.mcci_greeter.description": "Configure the MCCI Greeter",
+
+  "text.autoconfig.mcci_greeter.option.upliftingMode": "Enable uplifting mode",
+  "text.autoconfig.mcci_greeter.option.preGameMessage": "Pre-game messages (Uplifting mode)",
+  "text.autoconfig.mcci_greeter.option.postGameMessage": "Post-game messages (Uplifting mode)"
+}
