@@ -18,7 +18,7 @@ import static xyz.angeloanan.mccigreeter.client.MCCIGreeterClient.LOGGER;
 @Mixin(ClientPacketListener.class)
 public abstract class PacketListenerMixin {
     @Unique
-    private MCCIGreeterModConfig config = MCCIGreeterClient.config;
+    private final MCCIGreeterModConfig config = MCCIGreeterClient.config;
 
     @Unique
     private final Random random = new Random();
