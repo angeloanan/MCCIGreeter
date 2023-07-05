@@ -23,8 +23,7 @@ public abstract class PacketListenerMixin {
     @Unique
     private final Random random = new Random();
 
-    @Shadow
-    public abstract void sendChat(String string);
+    @Shadow public abstract void sendCommand(String string);
 
     @Inject(method = "setTitleText", at = @At("TAIL"))
     private void setTitleText(ClientboundSetTitleTextPacket cbstp, CallbackInfo ci) {
@@ -52,9 +51,9 @@ public abstract class PacketListenerMixin {
 
         if (config.upliftingMode) {
             int choice = random.nextInt(config.preGameMessage.length);
-            sendChat("/l " + config.preGameMessage[choice]);
+            sendCommand("l " + config.preGameMessage[choice]);
         } else {
-            sendChat("/l glhf");
+            sendCommand("l glhf");
         }
     }
 
@@ -64,9 +63,9 @@ public abstract class PacketListenerMixin {
 
         if (config.upliftingMode) {
             int choice = random.nextInt(config.postGameMessage.length);
-            sendChat("/l " + config.postGameMessage[choice]);
+            sendCommand("l " + config.postGameMessage[choice]);
         } else {
-            sendChat("/l gg");
+            sendCommand("l gg");
         }
     }
 
