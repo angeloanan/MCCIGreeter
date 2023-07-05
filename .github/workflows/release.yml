@@ -46,8 +46,8 @@ jobs:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project_id: ${{ secrets.MODRINTH_PROJECT_ID }}
           file_path: build/libs/${{ steps.findjar.outputs.jarname }}
-          name: Release ${{ github.event.release.tag_name }}
-          version: ${{ github.event.release.tag_name }}
+          name: MCCI Greeter ${{ github.ref }}
+          version: ${{ github.ref }}
           game_versions: 1.19.4,1.20,1.20.1
           release_type: release
           loaders: fabric
