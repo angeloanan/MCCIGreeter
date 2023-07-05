@@ -52,9 +52,9 @@ public abstract class PacketListenerMixin {
 
         if (config.upliftingMode) {
             int choice = random.nextInt(config.preGameMessage.length);
-            sendChat(config.preGameMessage[choice]);
+            sendChat("/l " + config.preGameMessage[choice]);
         } else {
-            sendChat("glhf");
+            sendChat("/l glhf");
         }
     }
 
@@ -64,9 +64,9 @@ public abstract class PacketListenerMixin {
 
         if (config.upliftingMode) {
             int choice = random.nextInt(config.postGameMessage.length);
-            sendChat(config.postGameMessage[choice]);
+            sendChat("/l " + config.postGameMessage[choice]);
         } else {
-            sendChat("gg");
+            sendChat("/l gg");
         }
     }
 
