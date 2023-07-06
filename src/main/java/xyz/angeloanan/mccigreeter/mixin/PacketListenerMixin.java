@@ -41,9 +41,17 @@ public abstract class PacketListenerMixin {
             case "Final Duelist": // Parkour Warrior Survivor 2nd
                 sendPostGameMessage();
                 break;
+            case "Final Duel": // Parkour Warrior Survivor, small break on last 1v1
+                sendFinalDuelMessage();
+                break;
             default:
                 break;
         }
+    }
+
+    @Unique
+    private void sendFinalDuelMessage() {
+        sendCommand("l gl");
     }
 
     @Unique
