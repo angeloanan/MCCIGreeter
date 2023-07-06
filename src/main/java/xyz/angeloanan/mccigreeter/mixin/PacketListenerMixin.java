@@ -51,9 +51,19 @@ public abstract class PacketListenerMixin {
 
         if (config.upliftingMode) {
             int choice = random.nextInt(config.preGameMessage.length);
-            sendCommand("l " + config.preGameMessage[choice]);
+            String message = config.preGameMessage[choice];
+
+            if (config.golf) {
+                message = message.replace("glhf", "golf");
+            }
+
+            sendCommand("l " + message);
         } else {
-            sendCommand("l glhf");
+            if (config.golf) {
+                sendCommand("l golf");
+            } else {
+                sendCommand("l glhf");
+            }
         }
     }
 

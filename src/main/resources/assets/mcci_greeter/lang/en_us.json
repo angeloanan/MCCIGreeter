@@ -4,6 +4,7 @@
 
   "text.autoconfig.mcci_greeter.option.preGameMessageEnabled": "Enable AutoGLHF",
   "text.autoconfig.mcci_greeter.option.postGameMessageEnabled": "Enable AutoGG",
+  "text.autoconfig.mcci_greeter.option.golf": "Replace glhf with golf",
   "text.autoconfig.mcci_greeter.option.upliftingMode": "Enable uplifting mode",
   "text.autoconfig.mcci_greeter.option.preGameMessage": "Pre-game messages (Uplifting mode)",
   "text.autoconfig.mcci_greeter.option.postGameMessage": "Post-game messages (Uplifting mode)"
