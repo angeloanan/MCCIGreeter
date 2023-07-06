@@ -38,6 +38,7 @@ public abstract class PacketListenerMixin {
                 break;
             case "Victory!":
             case "Game Over!":
+            case "Final Duelist": // Parkour Warrior Survivor 2nd
                 sendPostGameMessage();
                 break;
             default:
