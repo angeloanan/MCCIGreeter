@@ -37,8 +37,9 @@ public abstract class PacketListenerMixin {
                 sendPreGameMessage();
                 break;
             case "Victory!":
+            case "Team Victory!": // Sky battle victory
             case "Game Over!":
-            case "Final Duelist": // Parkour Warrior Survivor 2nd
+            case "Final Duelist": // Parkour Warrior Survivor 2nd, 1st is "Victory!"
                 sendPostGameMessage();
                 break;
             case "Final Duel": // Parkour Warrior Survivor, small break on last 1v1
