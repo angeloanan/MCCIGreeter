@@ -33,4 +33,6 @@ If true, uses the messages defined below.""")
             "gg, thanks for the game!",
             "gg, thanks for playing! :D",
     };
+
+    public boolean debug = false;
 }
