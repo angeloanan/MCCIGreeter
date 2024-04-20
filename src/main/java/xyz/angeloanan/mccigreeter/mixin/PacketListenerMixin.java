@@ -30,6 +30,7 @@ public abstract class PacketListenerMixin {
         String title = cbstp.getText().getString();
         LOGGER.info("Title text set to: %s".formatted(title));
         switch (title) {
+            case "Rocket Spleef Rush":
             case "Sky Battle":
             case "Hole in the Wall":
             case "Round 1": // Battle Box, TGTTOS(?)
